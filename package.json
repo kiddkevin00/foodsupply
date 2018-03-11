@@ -1,0 +1,43 @@
+{
+  "name": "foodsupply",
+  "version": "0.0.2",
+  "description": "End-to-end dapp for food supply chain on Ethereum using truffle v4.0.6 and initilize with `truffle unbox webpack`",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .js,.jsx app/javascripts migrations/ test/ webpack.config.js truffle.js"
+  },
+  "author": "Marcus Hsu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.22.2",
+    "babel-core": "6.22.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-runtime": "6.22.0",
+    "babel-preset-env": "1.1.8",
+    "babel-preset-es2015": "6.22.0",
+    "babel-register": "6.22.0",
+    "copy-webpack-plugin": "4.0.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-standard-react": "5.0.0",
+    "eslint-friendly-formatter": "2.0.7",
+    "eslint-plugin-chai-expect": "1.1.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-prefer-object-spread": "1.2.1",
+    "eslint-plugin-react": "7.0.1",
+    "css-loader": "0.26.1",
+    "html-webpack-plugin": "2.28.0",
+    "json-loader": "0.5.4",
+    "style-loader": "0.13.1",
+    "truffle-contract": "1.1.11",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.3.0"
+  },
+  "private": true,
+  "dependencies": {
+    "crypto-js": "3.1.9-1",
+    "web3": "0.20.0"
+  }
+}

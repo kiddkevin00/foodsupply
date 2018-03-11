@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Safe - Truffle Webpack Demo w/ Frontend</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="./app.js"></script>
+  </head>
+
+  <body>
+    <h1>Food Safe</h1>
+    <h3>ETH: <span id="my-current-account-balance"></span></h3>
+    <h3>Block#: <span id="current-block-number"></span></h3>
+    <br />
+    <label for="contract-address">Contract Address:</label>
+    <input type="text" id="contract-address" placeholder="Scan an existed address or create a new contract" />
+    <br />
+    <br />
+    <label for="location-id">Location Identifier:</label>
+    <input type="text" id="location-id" placeholder="Enter a location ID" />
+    <br />
+    <br />
+    <label for="location-name">Location Name:</label>
+    <input type="text" id="location-name" placeholder="Enter a location name" />
+    <br />
+    <br />
+    <label for="location-secret">Location Secret:</label>
+    <input type="text" id="location-secret" placeholder="Enter a location secret" />
+    <br />
+    <br />
+    <label for="location-passphrase">Secret Passphrase:</label>
+    <input type="text" id="location-passphrase" placeholder="Enter a passphrase unlock location secret" />
+    <br />
+    <br />
+    <br />
+    <button onclick="app.createContract()">Create New Contract</button>
+    <br />
+    <br />
+    <button onclick="app.addNewLocation()">Add New Location to Contract</button>
+    <br />
+    <br />
+    <button onclick="app.getEndLocation()">Get Location Info from Contract Address</button>
+  </body>
+</html>

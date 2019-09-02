@@ -39,7 +39,7 @@ window.app = {
 
       window.web3.eth.getBlockNumber((err, blockNumber) => {
         if (err) {
-          window.alert('There was an error fetching your account balance.');
+          window.alert('There was an error fetching current block number.');
         } else {
           document.getElementById('current-block-number').textContent = blockNumber;
         }
@@ -162,14 +162,14 @@ window.addEventListener('load', () => {
     console.warn('Using `web3` from external source. Ensure you\'ve configured the source ' +
       'properly. If you are using MetaMask, see the following link. http://truffleframework.com/' +
       'tutorials/truffle-and-metamask');
-    // Uses Mist/MetaMask's provider.
+    // Uses Mist/MetaMask provider.
     window.web3 = new Web3(window.web3.currentProvider);
   } else {
     console.warn('No `web3` from external source detected. Falling back to ' +
       'http://127.0.0.1:8545. You should remove this fallback when you deploy live, ' +
-      'as it\'s inherently insecure. Consider switching to Metamask for development. ' +
+      'as it\'s inherently insecure. Consider switching to MetaMask for development. ' +
       'More info here: http://truffleframework.com/tutorials/truffle-and-metamask');
-    // Connects to a geth server over JSON-RPC.
+    // Connects to a (Geth) node over JSON-RPC.
     window.web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'));
   }
 

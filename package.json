@@ -1,7 +1,7 @@
 {
   "name": "foodsupply",
   "version": "1.0.0",
-  "description": "An end-to-end dapp for food supply chain on Ethereum using truffle v4.0.6, geth v1.7.3-stable, and bootstrapped from `truffle unbox webpack`",
+  "description": "An end-to-end dapp for food supply chain on Ethereum using Geth v1.7.3-stable, MetaMask v3.5.2, Truffle v4.0.6, and bootstrapped from `truffle unbox webpack`",
   "scripts": {
     "dev": "webpack-dev-server",
     "lint": "eslint --format 'node_modules/eslint-friendly-formatter' --ext .js,.jsx app/javascripts migrations/ test/ webpack.config.js truffle.js"
